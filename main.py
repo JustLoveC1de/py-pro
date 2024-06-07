@@ -60,7 +60,7 @@ def main() -> None:
             case _:
                 print('> Такой команды не существует!')
     def level_dict_get() -> None:
-        cmd = input('Пожалуйста, введите одну из двух команд: «назад», «получить <слово>» | ').casefold().split(maxsplit=2)
+        cmd = input('Пожалуйста, введите одну из двух команд: «назад», «получить <слово>» | ').casefold().split(maxsplit=1)
         nonlocal level
         match cmd[0]:
             case 'назад':
@@ -77,7 +77,7 @@ def main() -> None:
             case _:
                 print('> Такой команды не существует!')
     def level_dict_write() -> None:
-        cmd = input('Пожалуйста, введите одну из двух команд: «назад», «записать <слово> <определение>» | ').casefold().split(maxsplit=3)
+        cmd = input('Пожалуйста, введите одну из двух команд: «назад», «записать <слово> <определение>» | ').casefold().split(maxsplit=2)
         nonlocal level
         match cmd[0]:
             case 'назад':
